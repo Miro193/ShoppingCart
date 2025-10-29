@@ -8,14 +8,14 @@ public class ShoppingCartTest {
 
     @Test
     void testEnglishBundle() {
-        ResourceBundle rb = ResourceBundle.getBundle("MessagasBundle", new Locale("en", "US"));
+        ResourceBundle rb = ResourceBundle.getBundle("MessagesBundle", new Locale("en", "US"));
         assertEquals("Enter the number of items to purchase:", rb.getString("prompt.items"));
     }
 
     @Test
     void testFinnishBundle() {
         ResourceBundle rb = ResourceBundle.getBundle("MessagesBundle", new Locale("fi", "FI"));
-        assertEquals("Anna ostettavien tuotteiden määrä:", rb.getString("prompt.items"));
+        assertEquals("Syötä ostettavien tuotteiden määrä:", rb.getString("prompt.items"));
     }
 
     @Test
